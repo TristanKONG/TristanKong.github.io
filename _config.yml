@@ -103,5 +103,5 @@ theme: landscape
 deploy:
   type: git
   repo: https://github.com/TristanKONG/TristanKong.github.io.git
-  branch: main
+  branch: gh-pages
 
