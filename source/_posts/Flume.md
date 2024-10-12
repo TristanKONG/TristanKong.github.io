@@ -1,6 +1,8 @@
-# Source
+# Flume
 
-## Exec
+## Source
+
+### Exec
 
 get data by running external command
 
@@ -10,7 +12,7 @@ get data by running external command
 
 ```
 
-## SpoolDir
+### SpoolDir
 
 ```
 .type = spooldir
@@ -18,7 +20,7 @@ get data by running external command
 .deletePolicy = nevet/immediate
 ```
 
-## Netcat
+### Netcat
 
 ```
 .type = netcat
@@ -36,7 +38,7 @@ TCP
 
 UDP
 
-## TailDir
+### TailDir
 
 ```
 .type = TAILDIR
@@ -45,13 +47,13 @@ UDP
 .positionFile = (localtion of json file)
 ```
 
-## Kafka
+### Kafka
 
 ```
 .type = org.apache.flume.source.kafka.KafkaSource
 ```
 
-## HTTP
+### HTTP
 
 accept events by POST and GET
 
@@ -71,9 +73,9 @@ a list of Flume events
 
 
 
-# Channel
+## Channel
 
-## Memory Channel
+### Memory Channel
 
 fast
 
@@ -87,7 +89,7 @@ events are stored  in an in-memory queue
 
 
 
-## File Channel
+### File Channel
 
 reliable
 
@@ -100,9 +102,9 @@ events are written in the disk
 
 
 
-# Sink
+## Sink
 
-## HDFS
+### HDFS
 
 ```
 .hdfs.path
@@ -115,7 +117,7 @@ events are written in the disk
 .hdfs.useLocalTimeStamp = true (使用本地时间戳，便于HDFS排序和查找)
 ```
 
-## HBase
+### HBase
 
 ```
 .type = hbase2

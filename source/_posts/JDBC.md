@@ -1,3 +1,5 @@
+# JDBC
+
 ## 1、加载数据库驱动程序
 
 ```
@@ -50,6 +52,7 @@ Stmt对象有三种执行SQL语句的方法：
   
 * execute()
   
+
 **executeQuery()**
 
 用于执行查询操作，并返回ResultSet（结果集）对象。
@@ -111,4 +114,3 @@ int age = rs.getInt("age"); //处理结果
 * stmt.close();
   
 * rs.close();
-  
