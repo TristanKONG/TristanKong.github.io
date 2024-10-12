@@ -1,0 +1,2 @@
+title: "Categories"
+layout: "categories"
