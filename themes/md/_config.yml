@@ -1,7 +1,7 @@
 menu:
- Archive: /archives
- Tags: /tags
- RSS: /atom.xml
+# Archive: /archives
+# Tags: /tags
+# RSS: /atom.xml
 
 widgets:
  - greeting
