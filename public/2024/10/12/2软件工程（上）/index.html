@@ -1,0 +1,1688 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>软件工程（上） | Mr. Tree 的 博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="一、绪论软件 定义  软件  软件 &#x3D; 程序 + 数据 + 文档  程序  程序是为了解决某个特定问题的而用程序设计语言描述的适合计算机处理的语句序列   数据  是程序能正常操作信息的数据结构   文档  软件开发活动的记录     软件是能够完成预定功能和性能的可执行的计算机程序，包括适用程序正常执行所需要的数据，以及有关描述程序操作和使用的文档      特征  不同与硬件  设计">
+<meta property="og:type" content="article">
+<meta property="og:title" content="软件工程（上）">
+<meta property="og:url" content="http://example.com/2024/10/12/2%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%EF%BC%88%E4%B8%8A%EF%BC%89/index.html">
+<meta property="og:site_name" content="Mr. Tree 的 博客">
+<meta property="og:description" content="一、绪论软件 定义  软件  软件 &#x3D; 程序 + 数据 + 文档  程序  程序是为了解决某个特定问题的而用程序设计语言描述的适合计算机处理的语句序列   数据  是程序能正常操作信息的数据结构   文档  软件开发活动的记录     软件是能够完成预定功能和性能的可执行的计算机程序，包括适用程序正常执行所需要的数据，以及有关描述程序操作和使用的文档      特征  不同与硬件  设计">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-10-12T04:00:00.000Z">
+<meta property="article:modified_time" content="2024-10-14T03:27:46.385Z">
+<meta property="article:author" content="TristanKong">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Mr. Tree 的 博客" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Mr. Tree 的 博客</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-2软件工程（上）" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/10/12/2%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%EF%BC%88%E4%B8%8A%EF%BC%89/" class="article-date">
+  <time class="dt-published" datetime="2024-10-12T04:00:00.000Z" itemprop="datePublished">2024-10-12</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Notes/">Notes</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      软件工程（上）
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h3 id="一、绪论"><a href="#一、绪论" class="headerlink" title="一、绪论"></a>一、绪论</h3><h4 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h4><ul>
+<li><p>定义</p>
+<ul>
+<li><p>软件</p>
+<ul>
+<li><p>软件 &#x3D; 程序 + 数据 + 文档</p>
+<ul>
+<li><p>程序</p>
+<ul>
+<li>程序是为了解决某个特定问题的而用程序设计语言描述的适合计算机处理的语句序列</li>
+</ul>
+</li>
+<li><p>数据</p>
+<ul>
+<li>是程序能正常操作信息的数据结构</li>
+</ul>
+</li>
+<li><p>文档</p>
+<ul>
+<li>软件开发活动的记录</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>软件是能够完成预定功能和性能的可执行的计算机程序，包括适用程序正常执行所需要的数据，以及有关描述程序操作和使用的文档</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>特征</p>
+<ul>
+<li><p>不同与硬件</p>
+<ul>
+<li><p>设计</p>
+</li>
+<li><p>制造</p>
+</li>
+<li><p>维修</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="软件危机"><a href="#软件危机" class="headerlink" title="软件危机"></a>软件危机</h4><ul>
+<li><p>定义</p>
+<ul>
+<li><p>落后的</p>
+<ul>
+<li>软件生成方式</li>
+</ul>
+</li>
+<li><p>无法满足</p>
+<ul>
+<li>迅速增长的计算机软件需求</li>
+</ul>
+</li>
+<li><p>从而导致</p>
+<ul>
+<li>软件开发与维护过程种出现一系列严重问题的现象</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>原因</p>
+<ul>
+<li><p>软件规模的扩大</p>
+<ul>
+<li>使软件复杂度的增加</li>
+</ul>
+</li>
+<li><p>软件维护费用的急剧上升</p>
+<ul>
+<li>直接威胁计算机应用的扩大</li>
+</ul>
+</li>
+<li><p>软件生产技术</p>
+<ul>
+<li><p>进步缓慢</p>
+</li>
+<li><p>是加剧软件危机的重要原因</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="软件工程学的范畴"><a href="#软件工程学的范畴" class="headerlink" title="软件工程学的范畴"></a>软件工程学的范畴</h4><ul>
+<li><p>软件开发方法学</p>
+<ul>
+<li><p>软件发展3阶段</p>
+<ul>
+<li><p>程序</p>
+</li>
+<li><p>软件</p>
+</li>
+<li><p>软件产品</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>软件工具</p>
+</li>
+<li><p>软件工程环境</p>
+</li>
+<li><p>软件工程管理</p>
+<ul>
+<li><p>目的</p>
+<ul>
+<li><p>为了按照进度及预算完成软件计划</p>
+</li>
+<li><p>实现预期的经济和社会效益</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="3种编程范型"><a href="#3种编程范型" class="headerlink" title="3种编程范型"></a>3种编程范型</h4><ul>
+<li><p>过程式编程范型</p>
+<ul>
+<li><p>着眼于程序的过程和基本控制结构</p>
+</li>
+<li><p>粒度最小</p>
+</li>
+</ul>
+</li>
+<li><p>面向对象编程范型</p>
+<ul>
+<li><p>面向对象程序设计(object-oriented programming,OOP)</p>
+</li>
+<li><p>着眼与程序中的对象</p>
+<ul>
+<li>粒度较大</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>基于构件技术的编程范型</p>
+<ul>
+<li><p>基于构件的开发技术(component-based development,CBD)</p>
+</li>
+<li><p>着眼与适合整个领域(domain)的类对象</p>
+<ul>
+<li>粒度最大</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="3代软件工程"><a href="#3代软件工程" class="headerlink" title="3代软件工程"></a>3代软件工程</h4><ul>
+<li><p>传统（经典）软件工程</p>
+<ul>
+<li><p>以结构化程序设计为基础</p>
+</li>
+<li><p>可区分为</p>
+<ul>
+<li><p>瀑布模型</p>
+</li>
+<li><p>原型模型等</p>
+</li>
+</ul>
+</li>
+<li><p>开发阶段</p>
+<ul>
+<li><p>结构化分析</p>
+</li>
+<li><p>结构化设计</p>
+</li>
+<li><p>面向过程编码</p>
+</li>
+<li><p>软件测试</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>面向对象软件工程</p>
+<ul>
+<li><p>以面向对象程序设计为基础</p>
+</li>
+<li><p>开发阶段</p>
+<ul>
+<li><p>OO分析与对象抽取</p>
+</li>
+<li><p>对象详细设计</p>
+</li>
+<li><p>面向对象的编码与测试</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>基于构件的软件工程</p>
+<ul>
+<li><p>以软件复用为目标、领域工程为基础</p>
+</li>
+<li><p>开发阶段</p>
+<ul>
+<li><p>领域分析和测试计划定制</p>
+</li>
+<li><p>领域设计</p>
+</li>
+<li><p>建立可复用构件库</p>
+</li>
+<li><p>按“构件集成模型”查找与集成构件</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>通用</p>
+<ul>
+<li><p>原理与方法</p>
+<ul>
+<li><p>分析先于设计</p>
+</li>
+<li><p>设计先于编码</p>
+</li>
+<li><p>使程序（的结构）适合于问题（的结构）</p>
+</li>
+</ul>
+</li>
+<li><p>开发方法</p>
+<ul>
+<li><p>分析与设计都应该提倡建立模型</p>
+</li>
+<li><p>编码需遵循编码范型</p>
+</li>
+<li><p>要加强软件工具的开发，不断改进以工具集成为特定的软件工程环境</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="二、软件生存周期与软件过程"><a href="#二、软件生存周期与软件过程" class="headerlink" title="二、软件生存周期与软件过程"></a>二、软件生存周期与软件过程</h3><h4 id="软件生存周期"><a href="#软件生存周期" class="headerlink" title="软件生存周期"></a>软件生存周期</h4><ul>
+<li><p>概念</p>
+<ul>
+<li><p>定义</p>
+<ul>
+<li>一个软件从开始立项起，到废弃不用止</li>
+</ul>
+</li>
+<li><p>目的</p>
+<ul>
+<li><p>将生存周期划分为阶段</p>
+<ul>
+<li>使软件复杂性变得较易控制和管理</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>主要活动</p>
+<ul>
+<li><ol>
+<li>需求分析</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>软件分析</li>
+</ol>
+<ul>
+<li>从开发人员的视角对软件的需求模型进行分析</li>
+</ul>
+</li>
+<li><ol start="3">
+<li>软件设计</li>
+</ol>
+<ul>
+<li><p>分为</p>
+<ul>
+<li><p>总体设计（概要设计）</p>
+<ul>
+<li>确定软件的总体结构和其他全局性的设计原则等</li>
+</ul>
+</li>
+<li><p>详细设计</p>
+<ul>
+<li><p>确定软件的每一个部件的</p>
+<ul>
+<li><p>数据结构</p>
+</li>
+<li><p>操作</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><ol start="4">
+<li>编码（测试）</li>
+</ol>
+<ul>
+<li><p>按照选定的程序设计语言和可复用软件构件包，把设计文档翻译为源程序</p>
+</li>
+<li><p>单元测试通常与编码同时进行</p>
+</li>
+</ul>
+</li>
+<li><ol start="5">
+<li>软件测试</li>
+</ol>
+<ul>
+<li><p>集成测试</p>
+</li>
+<li><p>确认测试（交付测试）</p>
+<ul>
+<li><p>包括</p>
+<ul>
+<li><p>α测试</p>
+</li>
+<li><p>β测试</p>
+</li>
+</ul>
+</li>
+<li><p>针对功能需求</p>
+</li>
+<li><p>独立的测试工程师</p>
+<ul>
+<li><p>执行测试</p>
+</li>
+<li><p>编写“测试报告”文档</p>
+<ul>
+<li><p>测试计划</p>
+</li>
+<li><p>测试用例</p>
+</li>
+<li><p>测试结果</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>系统测试</p>
+<ul>
+<li>针对性能等非功能需求</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><ol start="6">
+<li>运行维护</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="软件过程"><a href="#软件过程" class="headerlink" title="软件过程"></a>软件过程</h4><ul>
+<li><p>定义</p>
+<ul>
+<li><p>过程process</p>
+<ul>
+<li>人们随时间的流逝而进行的各种活动</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>传统软件过程</p>
+<ul>
+<li><p>瀑布模型</p>
+<ul>
+<li><p>定义</p>
+<ul>
+<li><p>基于软件生存周期</p>
+</li>
+<li><p>线性开发模型</p>
+</li>
+</ul>
+</li>
+<li><p>特点</p>
+<ul>
+<li><p>阶段间的顺序性和依赖性</p>
+<ul>
+<li><p>顺序性</p>
+<ul>
+<li>前一阶段完成后，后一阶段的工作才能开始</li>
+</ul>
+</li>
+<li><p>依赖性</p>
+<ul>
+<li>前一阶段的输出文档是后一阶段的输入文档</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>推迟实现的观点</p>
+<ul>
+<li>编码越早，开发时间越长</li>
+</ul>
+</li>
+<li><p>保证质量的观点</p>
+<ul>
+<li><ol>
+<li>每一阶段必须完成规定的文档</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>每一阶段都要对完成的文档进行复审</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p>存在的问题</p>
+<ul>
+<li>很难在开发的初始阶段彻底弄清软件需求</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>快速原型模型</p>
+<ul>
+<li><p>中心思想</p>
+<ul>
+<li><p>先建立一个能够反映用户主要需求的原型</p>
+</li>
+<li><p>让用户实际看到一个未来系统的概貌</p>
+</li>
+<li><p>以便判断哪些功能是符合需要的，哪些方面需要改进</p>
+</li>
+<li><p>然后将原型反复改进，直至建立完全符合用户要求的新系统</p>
+</li>
+</ul>
+</li>
+<li><p>开发方法</p>
+<ul>
+<li><p>只包括未来系统的的</p>
+<ul>
+<li><p>主要功能</p>
+</li>
+<li><p>重要接口</p>
+</li>
+</ul>
+</li>
+<li><p>尽量使用能缩短开发周期的语言和工具</p>
+</li>
+<li><p>把原型系统作为基础</p>
+<ul>
+<li><p>通过补充和修改获得最终的实际系统</p>
+</li>
+<li><p>废弃大多数原型</p>
+<ul>
+<li>仅把建立原型的过程当作帮助定义软件需求的一种手段</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>软件演化模型(evolutionary model)</p>
+<ul>
+<li><p>增量模型</p>
+<ul>
+<li><p>结合</p>
+<ul>
+<li><p>瀑布模型</p>
+<ul>
+<li>顺序特征</li>
+</ul>
+</li>
+<li><p>快速原型模型</p>
+<ul>
+<li>迭代特征</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>把软件看作一系列相互联系的增量(increments)</p>
+<ul>
+<li><p>每次迭代完成其中一个增量</p>
+<ul>
+<li><p>其中任一个增量的开发流程均可按…完成</p>
+<ul>
+<li><p>瀑布模型</p>
+</li>
+<li><p>快速原型模型</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>螺旋模型</p>
+<ul>
+<li><p>结合…基础上演变而成</p>
+<ul>
+<li><p>瀑布模型</p>
+</li>
+<li><p>快速原型模型（增量模型）</p>
+</li>
+</ul>
+</li>
+<li><p>典型的迭代模型</p>
+<ul>
+<li><p>每轮螺旋均包含</p>
+<ul>
+<li><p>计划</p>
+<ul>
+<li><p>选定完成本轮螺旋所定目标的策略</p>
+<ul>
+<li><p>确定待开发系统的目标</p>
+</li>
+<li><p>选择方案</p>
+</li>
+<li><p>设定约束条件</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>风险分析</p>
+<ul>
+<li><p>评估本轮螺旋可能存在的风险</p>
+</li>
+<li><p>目的</p>
+<ul>
+<li><p>了解、分析并设法降低和排除</p>
+<ul>
+<li>因不确定因素导致的风险</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>建立原型</p>
+<ul>
+<li>实现本轮螺旋的目标</li>
+</ul>
+</li>
+<li><p>用户评审</p>
+</li>
+</ul>
+</li>
+<li><p>如果开发小组对项目的需求</p>
+<ul>
+<li><p>有较好的理解</p>
+<ul>
+<li>第一圈可直接用瀑布模型</li>
+</ul>
+</li>
+<li><p>反之</p>
+<ul>
+<li>需要经过多圈螺线，开发一个或多个原型</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>特点</p>
+<ul>
+<li><p>在项目的所有阶段都考虑各类风险</p>
+</li>
+<li><p>不足</p>
+<ul>
+<li><p>难以使用户相信演化方法是可控的</p>
+</li>
+<li><p>过多的迭代周期也会增加开发成本和时间</p>
+</li>
+</ul>
+</li>
+<li><p>成败很大程度上依赖于</p>
+<ul>
+<li>风险评估的准确性</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>构件集成模型</p>
+<ul>
+<li><p>基本概念</p>
+<ul>
+<li><p>面向对象 &#x3D; 对象 + 分类 + 继承 + 消息通信</p>
+</li>
+<li><p>对象技术</p>
+<ul>
+<li><p>将事物封装成</p>
+<ul>
+<li><p>对象</p>
+<ul>
+<li><p>包含</p>
+<ul>
+<li><p>数据</p>
+</li>
+<li><p>加工该数据的方法</p>
+</li>
+</ul>
+</li>
+<li><p>抽象成</p>
+<ul>
+<li>类</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>构件</p>
+<ul>
+<li>经过适当设计和实现的类</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>特征</p>
+<ul>
+<li><p>利用预先封装好的构件来构造应用软件系统</p>
+</li>
+<li><p>融合了螺旋模型</p>
+<ul>
+<li>支持软件开发的迭代方法</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>流程</p>
+<ul>
+<li><p>标识候选构件</p>
+</li>
+<li><p>查找构件</p>
+</li>
+<li><p>若存在则提取构件</p>
+</li>
+<li><p>若不存在则构造构件</p>
+</li>
+<li><p>将新构件存入库中</p>
+</li>
+<li><p>进行下一次迭代</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>形式化方法模型</p>
+<ul>
+<li><p>转换模型</p>
+<ul>
+<li><p>概念</p>
+<ul>
+<li><p>结合</p>
+<ul>
+<li><p>形式化软件开发</p>
+</li>
+<li><p>程序自动生成技术</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>软件开发过程</p>
+<ul>
+<li><ol>
+<li>确定形式化的需求规格说明书</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>进行自动的程序变换</li>
+</ol>
+</li>
+<li><ol start="3">
+<li>对形式化开发记录进行测试</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p>常用技术</p>
+<ul>
+<li><p>基于模型的需求规格说明书及其变换技术</p>
+</li>
+<li><p>基于代数结构的需求规格说明及其变换技术</p>
+</li>
+<li><p>基于时序逻辑的需求规格说明书和验证技术以及基于可视形式化的技术</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>净室模型</p>
+<ul>
+<li><p>概念</p>
+<ul>
+<li><p>形式化的增量开发模型</p>
+</li>
+<li><p>基本思想</p>
+<ul>
+<li><p>力求在分析和设计阶段就消除错误</p>
+</li>
+<li><p>然后再无缺陷或“洁净”的状态下实现软件的制作</p>
+</li>
+</ul>
+</li>
+<li><p>盒（box）</p>
+<ul>
+<li><p>净室开发把软件看成一系列的增量</p>
+</li>
+<li><p>每个增量是一个用形式化方式表示的“盒”</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>8种软件开发模型的主要特点</p>
+<ul>
+<li><p>开发模型</p>
+<ul>
+<li><p>特点</p>
+<ul>
+<li>适用场景</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>瀑布模型</p>
+<ul>
+<li><p>线性模型</p>
+<ul>
+<li>需求明确的中、小型软件开发</li>
+</ul>
+</li>
+<li><p>每一阶段必须完成规定的开发文档</p>
+</li>
+</ul>
+</li>
+<li><p>快速原型模型</p>
+<ul>
+<li><p>用户介入早</p>
+<ul>
+<li>需求模糊的小型软件开发</li>
+</ul>
+</li>
+<li><p>通过迭代完善用户需求，应用快速开发工具</p>
+</li>
+</ul>
+</li>
+<li><p>增量模型</p>
+<ul>
+<li><p>每次迭代完成一个增量，可用于OO开发</p>
+<ul>
+<li>容易分块的大型软件开发</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>螺旋模型</p>
+<ul>
+<li><p>典型迭代模型，重视风险分析，可用于OO开发</p>
+<ul>
+<li>具有不确定性的大型软件开发</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>构件集成模型</p>
+<ul>
+<li><p>软件开发与构件开发平行进行，主要用于OO开发</p>
+<ul>
+<li>领域工程、行业的中型软件开发</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>转换模型</p>
+<ul>
+<li><p>形式化的需求规格说明书，自动的程序变换系统</p>
+<ul>
+<li>理想化模型，尚无成熟工具支持</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>净室模型</p>
+<ul>
+<li><p>形式化的增量开发模型</p>
+<ul>
+<li>开发团队熟悉形式化方法，中小型软件开发</li>
+</ul>
+</li>
+<li><p>在洁净状态下实现软件制作</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>统一过程和敏捷过程</p>
+<ul>
+<li><p>统一过程(Rational Unified Process,RUP)</p>
+<ul>
+<li><p>概念</p>
+<ul>
+<li>描述了软件开发中各个环节应该做什么、怎么做、什么时候做以及为什么要做，描述了一组以某种顺序完成的活动</li>
+</ul>
+</li>
+<li><p>4个阶段</p>
+<ul>
+<li><p>初始阶段</p>
+<ul>
+<li><p>目标</p>
+<ul>
+<li>确定所设立的项目是否可行</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>细化阶段</p>
+<ul>
+<li><p>目标</p>
+<ul>
+<li>识别出剩余的大多数用例</li>
+</ul>
+</li>
+<li><p>任务</p>
+<ul>
+<li><p>风险分析</p>
+<ul>
+<li><p>需求</p>
+</li>
+<li><p>技术</p>
+</li>
+<li><p>技能</p>
+</li>
+<li><p>政策</p>
+</li>
+</ul>
+</li>
+<li><p>高层分析和设计，做出结构型决策</p>
+</li>
+<li><p>产生简要体系结构</p>
+</li>
+<li><p>为构造阶段指定计划</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>构造阶段</p>
+<ul>
+<li><p>目标</p>
+<ul>
+<li>识别出剩余的用例</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>迁移阶段</p>
+<ul>
+<li><p>目标</p>
+<ul>
+<li><p>完成最后的软件产品和验收测试</p>
+</li>
+<li><p>完成用户文档编制以及用户培训等工作</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>敏捷过程(Agile Process)</p>
+<ul>
+<li><p>敏捷开发的价值观</p>
+<ul>
+<li><p>个人和交互 胜过 过程和工具</p>
+</li>
+<li><p>可以运行的软件 胜过 面面俱到的文档</p>
+</li>
+<li><p>客户合作 胜过 合同谈判</p>
+</li>
+<li><p>响应变化 胜过 遵循计划</p>
+</li>
+</ul>
+</li>
+<li><p>敏捷开发应遵循的12条原则</p>
+</li>
+<li><p>极限编程XP(extreme programming)</p>
+<ul>
+<li><p>4个价值观（软件项目从4个方面入手改善）</p>
+<ul>
+<li><p>加强交流</p>
+</li>
+<li><p>从简单做起</p>
+</li>
+<li><p>寻求反馈</p>
+</li>
+<li><p>勇于实事求是</p>
+</li>
+</ul>
+</li>
+<li><p>12个核心实践</p>
+<ul>
+<li><p>完善团队</p>
+</li>
+<li><p>计划对策</p>
+</li>
+<li><p>测试</p>
+</li>
+<li><p>简单设计</p>
+</li>
+<li><p>结对编程</p>
+</li>
+<li><p>小软件版本</p>
+</li>
+<li><p>设计改进</p>
+</li>
+<li><p>持续集成</p>
+</li>
+<li><p>代码集体共有</p>
+</li>
+<li><p>编码标准</p>
+</li>
+<li><p>系统比喻</p>
+</li>
+<li><p>可持续的速度</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>软件可行性研究</p>
+<ul>
+<li><p>研究内容</p>
+<ul>
+<li><p>经济</p>
+</li>
+<li><p>技术</p>
+</li>
+<li><p>运行</p>
+</li>
+<li><p>法律</p>
+</li>
+</ul>
+</li>
+<li><p>研究步骤</p>
+<ul>
+<li><ol>
+<li>对当前系统进行调查和研究</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>导出新系统的解决方案</li>
+</ol>
+</li>
+<li><ol start="3">
+<li>提出推荐的方案</li>
+</ol>
+</li>
+<li><ol start="4">
+<li>编写可行性论证报告</li>
+</ol>
+<ul>
+<li><p>系统概述</p>
+</li>
+<li><p>可行性分析</p>
+</li>
+<li><p>结论意见</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>软件风险分析</p>
+<ul>
+<li><p>风险识别</p>
+</li>
+<li><p>风险预测</p>
+<ul>
+<li><p>建立风险可能性尺度</p>
+</li>
+<li><p>估计对产品和项目的影响</p>
+</li>
+</ul>
+</li>
+<li><p>风险的驾驭和监控</p>
+</li>
+</ul>
+</li>
+<li><p>项目实施计划</p>
+<ul>
+<li><p>项目实施计划</p>
+</li>
+<li><p>质量保证计划</p>
+</li>
+<li><p>软件测试计划</p>
+</li>
+<li><p>文档编制计划</p>
+</li>
+<li><p>用户培训计划</p>
+</li>
+<li><p>综合支持计划</p>
+</li>
+<li><p>软件分发计划</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="三、结构化分析与设计"><a href="#三、结构化分析与设计" class="headerlink" title="三、结构化分析与设计"></a>三、结构化分析与设计</h3><h4 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h4><ul>
+<li><p>基本任务与指导思想</p>
+<ul>
+<li><p>结构化分析</p>
+<ul>
+<li><p>基本任务</p>
+<ul>
+<li><p>建立系统分析模型</p>
+<ul>
+<li>分层DFD图</li>
+</ul>
+</li>
+<li><p>编写软件需求规格说明书(software requirements specification, SRS)</p>
+<ul>
+<li><p>主要内容</p>
+<ul>
+<li><p>引言</p>
+</li>
+<li><p>信息描述</p>
+</li>
+<li><p>功能描述</p>
+</li>
+<li><p>行为描述</p>
+</li>
+<li><p>接口描述</p>
+</li>
+<li><p>质量保证</p>
+</li>
+<li><p>其他需求</p>
+</li>
+</ul>
+</li>
+<li><p>要求</p>
+<ul>
+<li><p>准确性</p>
+<ul>
+<li>无错漏</li>
+</ul>
+</li>
+<li><p>防止二义性</p>
+<ul>
+<li>客户理解</li>
+</ul>
+</li>
+<li><p>直观易改</p>
+<ul>
+<li>尽可能采用图形和符号</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>指导思想</p>
+<ul>
+<li>抽象与分解</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>结构化设计</p>
+<ul>
+<li><p>基本任务</p>
+<ul>
+<li><p>转换</p>
+<ul>
+<li><p>DFD</p>
+</li>
+<li><p>最终SC图</p>
+</li>
+</ul>
+</li>
+<li><p>描述</p>
+<ul>
+<li><p>用描述工具</p>
+<ul>
+<li>SC图</li>
+</ul>
+</li>
+<li><p>模块的</p>
+<ul>
+<li><p>算法</p>
+</li>
+<li><p>数据结构</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>软件设计</p>
+<ul>
+<li><p>总体设计</p>
+<ul>
+<li><p>初始SC图（映射）</p>
+</li>
+<li><p>最终SC图（优化）</p>
+</li>
+</ul>
+</li>
+<li><p>详细设计</p>
+<ul>
+<li>完成模块说明</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>指导思想</p>
+<ul>
+<li>分解和细化</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>结构化分析(structured analysis,SA)</p>
+<ul>
+<li><p>组成</p>
+<ul>
+<li><p>数据字典(data dictionary, DD)</p>
+<ul>
+<li><p>实体联系图(entity-relation diagram, E-R图)</p>
+<ul>
+<li>数据对象说明</li>
+</ul>
+</li>
+<li><p>数据流图(data flow diagrm, DFD)</p>
+<ul>
+<li>加工规格说明(process specification, PSPEC)</li>
+</ul>
+</li>
+<li><p>状态变换图(status transform diagram, STD)</p>
+<ul>
+<li>控制规格说明(control specification, CSPEC)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>描述工具</p>
+<ul>
+<li><p>数据流图( DFD )</p>
+<ul>
+<li><p>源点和终点</p>
+</li>
+<li><p>数据流</p>
+</li>
+<li><p>加工</p>
+</li>
+<li><p>数据文件 &#x2F; 数据库 &#x2F; 数据存储</p>
+</li>
+</ul>
+</li>
+<li><p>数据字典( DD )</p>
+<ul>
+<li><p>数据项</p>
+</li>
+<li><p>数据流</p>
+</li>
+<li><p>加工处理</p>
+</li>
+<li><p>数据文件</p>
+</li>
+</ul>
+</li>
+<li><p>加工规格说明( PSPEC )</p>
+<ul>
+<li><p>结构化语言</p>
+</li>
+<li><p>判定表或判定树</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>结构化设计(structured design,SD)</p>
+<ul>
+<li><p>组成</p>
+<ul>
+<li><p>过程设计</p>
+</li>
+<li><p>接口设计</p>
+</li>
+<li><p>体系结构设计</p>
+</li>
+<li><p>数据设计</p>
+</li>
+</ul>
+</li>
+<li><p>描述工具</p>
+<ul>
+<li><p>结构图(structure chart, SC)</p>
+<ul>
+<li><p>SC图的模块调用的表示方法</p>
+<ul>
+<li><p>简单调用</p>
+</li>
+<li><p>选择调用</p>
+</li>
+<li><p>循环调用</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="结构化系统分析与设计"><a href="#结构化系统分析与设计" class="headerlink" title="结构化系统分析与设计"></a>结构化系统分析与设计</h4><ul>
+<li><p>结构化系统分析SA</p>
+<ul>
+<li><p>基本步骤</p>
+<ul>
+<li><ol>
+<li>自顶向下对系统进行功能分解</li>
+</ol>
+<ul>
+<li>画出分层DFD图</li>
+</ul>
+</li>
+<li><ol start="2">
+<li>有后向前定义系统的数据和加工</li>
+</ol>
+<ul>
+<li>编制DD和PSPEC</li>
+</ul>
+</li>
+<li><ol start="3">
+<li>写出SRS</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p>工具</p>
+<ul>
+<li><p>DFD</p>
+</li>
+<li><p>DD</p>
+</li>
+<li><p>结构化英语</p>
+</li>
+<li><p>判定表和判定树</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>结构化系统设计SD</p>
+<ul>
+<li><p>结构化软件的设计，通常从DFD图到SC图的映射开始</p>
+</li>
+<li><p>步骤</p>
+<ul>
+<li><p>复审DFD</p>
+</li>
+<li><p>鉴别DFD</p>
+</li>
+<li><p>把DFD映射为初始SC图</p>
+<ul>
+<li><p>变换映射</p>
+</li>
+<li><p>事物映射</p>
+</li>
+</ul>
+</li>
+<li><p>改进SC图获得最终SC图</p>
+<ul>
+<li><p>按照优化设计的指导原则</p>
+<ul>
+<li><p>对模块划分的原则</p>
+<ul>
+<li>总行数控制在10～100行，最好为30～60行</li>
+</ul>
+</li>
+<li><p>高扇入／低扇出的原则</p>
+<ul>
+<li><p>扇入</p>
+<ul>
+<li>增加模块的利用率，复用率</li>
+</ul>
+</li>
+<li><p>扇出</p>
+<ul>
+<li><p>3～4为宜</p>
+</li>
+<li><p>不超过5～7</p>
+<ul>
+<li>过多软件结构将呈煎饼形</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>设计良好</p>
+<ul>
+<li><p>翁型结构</p>
+<ul>
+<li><p>两头小</p>
+</li>
+<li><p>中间大</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>DFD图</p>
+<ul>
+<li><p>变换型结构</p>
+<ul>
+<li><p>传入路径</p>
+</li>
+<li><p>变换中心</p>
+</li>
+<li><p>传出路径</p>
+</li>
+</ul>
+</li>
+<li><p>事务型结构</p>
+<ul>
+<li><p>接受路径</p>
+<ul>
+<li>至少一条</li>
+</ul>
+</li>
+<li><p>事务中心</p>
+</li>
+<li><p>动作路径</p>
+<ul>
+<li>若干条</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>在大型系统的DFD中两者往往同时存在</p>
+</li>
+</ul>
+</li>
+<li><p>分层DFD图到最终SC图的一般过程</p>
+<ul>
+<li><p>SA（工具：DFD、PSPEC）——&gt;分析模型（分层DFD图+SRS）</p>
+</li>
+<li><p>SD（工具：SC图）— 映射 —＞初始设计模型（初始SC图）</p>
+</li>
+<li><p>初始设计模式（初始SC图）— 优化 —&gt;最终设计模型（最终SC图）</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="模块设计（详细设计）"><a href="#模块设计（详细设计）" class="headerlink" title="模块设计（详细设计）"></a>模块设计（详细设计）</h4><ul>
+<li><p>目的</p>
+<ul>
+<li><p>为SC图中的每个模块确定采用的</p>
+<ul>
+<li><p>算法</p>
+</li>
+<li><p>（块内）数据结构</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>结构化的控制结构</p>
+<ul>
+<li><p>任何程序的逻辑均可用顺序、选择和循环（DO-WHILE型）3钟控制结构或它们的组合来实现</p>
+</li>
+<li><p>每个控制结构值应有</p>
+<ul>
+<li><p>一个入口</p>
+</li>
+<li><p>一个出口</p>
+</li>
+</ul>
+</li>
+<li><p>是详细设计阶段确保模块逻辑清晰的 关键技术</p>
+</li>
+</ul>
+</li>
+<li><p>表达工具</p>
+<ul>
+<li><p>流程图(flow diagram)</p>
+<ul>
+<li><p>最古老</p>
+</li>
+<li><p>特性（缺点）</p>
+<ul>
+<li><p>随意性</p>
+</li>
+<li><p>灵活性</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>伪代码(program design language,PDL)</p>
+<ul>
+<li>文字形式</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/10/12/2%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%EF%BC%88%E4%B8%8A%EF%BC%89/" data-id="cm2bvklb200074cufdf0m098e" data-title="软件工程（上）" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2024/10/12/1%E9%A1%B9%E7%9B%AE%E7%BB%8F%E7%90%86/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          项目经理
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2024/10/12/3%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%EF%BC%88%E4%B8%AD%EF%BC%89/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">软件工程（中）</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/ABOUTME/">ABOUTME</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Notes/">Notes</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/10/">October 2024</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2024/10/12/0%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/">About Me</a>
+          </li>
+        
+          <li>
+            <a href="/2024/10/12/1%E9%A1%B9%E7%9B%AE%E7%BB%8F%E7%90%86/">项目经理</a>
+          </li>
+        
+          <li>
+            <a href="/2024/10/12/2%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%EF%BC%88%E4%B8%8A%EF%BC%89/">软件工程（上）</a>
+          </li>
+        
+          <li>
+            <a href="/2024/10/12/3%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%EF%BC%88%E4%B8%AD%EF%BC%89/">软件工程（中）</a>
+          </li>
+        
+          <li>
+            <a href="/2024/10/12/4%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%EF%BC%88%E4%B8%8B%EF%BC%89/">软件工程（下）</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2024 TristanKong<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
